@@ -78,3 +78,10 @@ print(fruit5)
 # แต่ถ้าใช้ฟังชั้น Discard จะไม่เกิด Error ถ้าไม่มีข้อมูลสมาชิก 
 fruit5.discard("มะนาว")
 print(fruit5)
+
+# หากต้องการลบข้อมูลสมาชิกทั้งหมด 
+fruit5.clear()
+print("ลบข้อมูลโดยใช้ clear",fruit5)
+
+# หากต้องการลบตัวแปรเลย
+# ใช้คำสั่ง del furit5 ***
