@@ -33,8 +33,10 @@ displayData(fname="tony Ja") # ส่งค่าได้ตำเดียว
 
 
 # **Kwargs 
-def displayData2(**kwargs):
-    print(kwargs)
+# def displayData2(**kwargs):
+def displayData2(**item): # ตัวอย่างการเปลี่ยนชื่อตัวรับค่า ต้องมี ** 
+    # print(kwargs)
+    print(item) 
 
 displayData2(fname="tony 2")
 displayData2(fname="tony 2",lname="no2")
@@ -45,3 +47,4 @@ displayData2(singleName="tony 2")
 
 # พอแสดงผล เราจะได้ข้อมูลมาเป็น Dictionary <= ชนิดข้อมูล 
 # สามารถตั้งชื่ออะไรก็ได้ อิสระ
+# kwargs เป็นค่าเริ่มต้น ไม่มีชื่อที่ชัดเจน เราสามารถแก้ไขชื่อมันได้แต่จำเป็นต้องมี ** นำหน้า 
