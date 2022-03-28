@@ -30,5 +30,11 @@ def addNumber(number1):
     number1+=1 # +1 
     addNumber(number1)
 
+def summation(number):
+    if number==1:
+        return number
+    else :
+        return number+summation(number-1)
 
-addNumber(0)
+x=summation(5) # ? = 5 + 4 + 3 ... => + 1 
+print(x)
